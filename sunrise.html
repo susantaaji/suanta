@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        border: 4px solid rgba(8, 75, 114, 0.892);
+        width: 400px;
+        height: 500px;
+        background: url(https://cdn0.weddingwire.in/vendor/0385/3_2/960/png/image_15_170385.jpeg);
+        background-size:cover;
+        background-position: center;
+        border-radius: 30px;
+        position: absolute;
+        bottom: 100px;
+        right: 700px;
+      }
+      
+      h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-size:150%;
+        color: rgb(6, 242, 203);
+      }
+      
+      input[type="text"],input[type="email"],input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #0ae62b81;
+      }
+      
+      input[type="submit"] {
+        background-color:#dbe3db;
+        color: #1e1818;
+        padding: 10px 20px;
+        border:solid rgba(255, 0, 0, 0.358);
+        border-radius: 10px;
+        cursor: wait;
+      }  
+        .ss:hover {
+        background-color: #07ec12;
+        transition: all 2s ease-out; 
+       
+      }
+      body{
+        background: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+        width:1350px;
+        background-size: cover;
+      }
+      
+</style>
+<body>
+ 
+    <form>
+  <h2>Registration Form</h2>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required placeholder="enter your name">
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="enter your email adress" name="email" required>
+  <label for="password">Password:</label>
+  <input type="password" id="password" placeholder="enter your password" name="password" required>
+  <label for="confirm_password">Conform Password:</label>
+  <input type="password" id="confirm_password"placeholder="conform password" name="confirm_password" required>
+  <input type="submit" value="REGISTER" CLASS="ss">
+</form>
+
+</body>
+</html>

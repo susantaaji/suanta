@@ -1,0 +1,145 @@
+*{
+    margin: 0;padding: 0;
+}
+header{
+    width:100%;height:100vh;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+width:100%;height: 15vh;
+background: rgb(18, 20, 19);
+color:rgb(244, 245, 246);display: flex;
+justify-content: space-between;
+align-items: center;
+text-transform: uppercase;
+text-decoration: none;
+}
+.logo{
+     font-size:300%;
+     transform:skew(10deg, 5deg);
+     animation-name: susanta;
+     animation-duration: 1s ;
+     animation-iteration-count: infinite;
+}
+nav .menu{
+    width:40%;
+    justify-content:space-between;
+    outline: none; 
+    color:rgb(174, 40, 40);
+    font-weight:bold;
+    text-decoration: none;
+   
+}
+.menu {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:end;
+   
+    font-size:bold;
+    }
+.menu a{
+    text-decoration: none;
+    margin: 2%;
+    color:rgb(232, 26, 153);
+    font-size: 20px;
+}
+.menu a:hover{
+    background:linear-gradient(90deg,rgb(19, 65, 19),rgb(22, 22, 81),rgb(59, 4, 4));
+   
+}
+nav.menu a:first-child{
+color:aqua;
+}
+main{
+    width:100%;
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    text-align: center;
+}
+section h1{
+    font-size: 80px;
+    font-weight: 200;
+    color: rgb(121, 15, 98);
+}
+section h3{
+    font-size: 60;
+    color:rgb(10, 4, 183);
+}
+section p{
+font-size: 40;color:rgb(193, 164, 164);
+}
+section a{
+    font-size: 70PX;
+    color:rgb(139, 165, 226);
+    letter-spacing: 1px;
+    outline: none;
+    padding: 12PX 30PX;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.BTONE{
+    color: rgb(10,64,64);
+    font-size: 50px;
+}
+.BTONE:hover{
+    background: #00b890;
+    color:white;
+}
+.BOTTWO{
+    color: rgb(10, 64, 64);
+    font-size: 50px;
+}
+.BOTTWO:hover{
+    background: #0b967f;
+    color:rgb(255, 128, 128);
+}
+.change_content:after{
+    content:'';
+    animation: changetext 10s infinite linear;
+    color:rgb(165, 57, 14);
+}
+h4{
+    color: rgb(160, 175, 189);
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+@keyframes changetext{
+    0%{content:"Darjeeling";}
+    20%{content:"kolkata";}
+    30%{content:"Monipur";}
+    40%{content:"Howrah";}
+    50%{content:"Rajasthan";}
+    60%{content:"Sultanpur";}
+    70%{content:"Nandigram";}
+}
+img{
+  height: 100px;
+  border-radius: 50%;
+  padding: 2%;
+}
+@media screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+        padding-block: 20px;
+    }
+    .menu{
+display: flex;
+flex-direction: column;
+color: rgb(131, 9, 38);
+
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+        display: none;
+    }
+    body{
+    background-color: #00b890;
+    }
+}
